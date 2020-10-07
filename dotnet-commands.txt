@@ -1,0 +1,15 @@
+
+//To create a new app
+dotnet new webapi -n DatingApp.API
+
+//command to run dotnet server app..
+dotnet watch run
+
+//to install entity
+dotnet tool install --global dotnet-ef
+
+//uses the entity framework to create data driven classes for the classes.
+dotnet ef migrations add InitialCreate
+
+//create the database
+dotnet ef database update
